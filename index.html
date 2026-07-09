@@ -1,0 +1,442 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Kemuel Baduon | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-secondary-container": "#54647a",
+                  "surface-container": "#eceef0",
+                  "surface-bright": "#f7f9fb",
+                  "tertiary-fixed-dim": "#ffb780",
+                  "inverse-on-surface": "#eff1f3",
+                  "surface-variant": "#e0e3e5",
+                  "on-error-container": "#93000a",
+                  "tertiary": "#532800",
+                  "on-tertiary-container": "#f9a767",
+                  "on-tertiary-fixed-variant": "#6f3800",
+                  "outline-variant": "#c2c7d1",
+                  "tertiary-fixed": "#ffdcc4",
+                  "on-primary-container": "#8ebdf9",
+                  "secondary-fixed-dim": "#b7c8e1",
+                  "surface": "#f7f9fb",
+                  "surface-container-lowest": "#ffffff",
+                  "primary": "#00355f",
+                  "on-primary-fixed": "#001c37",
+                  "outline": "#727780",
+                  "on-primary": "#ffffff",
+                  "surface-container-highest": "#e0e3e5",
+                  "surface-container-low": "#f2f4f6",
+                  "error-container": "#ffdad6",
+                  "on-secondary": "#ffffff",
+                  "inverse-primary": "#a0c9ff",
+                  "on-primary-fixed-variant": "#07497d",
+                  "secondary-container": "#d0e1fb",
+                  "on-surface": "#191c1e",
+                  "on-background": "#191c1e",
+                  "on-secondary-fixed-variant": "#38485d",
+                  "secondary": "#505f76",
+                  "on-surface-variant": "#42474f",
+                  "on-tertiary-fixed": "#2f1400",
+                  "tertiary-container": "#743b00",
+                  "primary-fixed-dim": "#a0c9ff",
+                  "on-secondary-fixed": "#0b1c30",
+                  "on-tertiary": "#ffffff",
+                  "surface-tint": "#2d6197",
+                  "inverse-surface": "#2d3133",
+                  "primary-container": "#0f4c81",
+                  "error": "#ba1a1a",
+                  "primary-fixed": "#d2e4ff",
+                  "secondary-fixed": "#d3e4fe",
+                  "surface-dim": "#d8dadc",
+                  "on-error": "#ffffff",
+                  "surface-container-high": "#e6e8ea",
+                  "background": "#f7f9fb"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "container-max": "1120px",
+                  "gutter": "1.5rem",
+                  "section-padding-desktop": "8rem",
+                  "stack-sm": "0.5rem",
+                  "stack-md": "1.5rem",
+                  "stack-lg": "3rem",
+                  "section-padding-mobile": "4rem"
+          },
+          "fontFamily": {
+                  "display-lg-mobile": ["Hanken Grotesk"],
+                  "label-caps": ["Hanken Grotesk"],
+                  "body-lg": ["Inter"],
+                  "headline-md": ["Hanken Grotesk"],
+                  "display-lg": ["Hanken Grotesk"],
+                  "body-md": ["Inter"]
+          },
+          "fontSize": {
+                  "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                  "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                  "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                  "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                  "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .skill-card:hover .skill-icon {
+      background-color: #00355f;
+      color: white;
+    }
+    .dark .skill-card:hover .skill-icon {
+      background-color: #a0c9ff;
+      color: #001c37;
+    }
+    .project-card {
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+    .active-nav {
+      color: #00355f !important;
+      border-bottom: 2px solid #00355f;
+      padding-bottom: 4px;
+      font-weight: 600;
+    }
+    .dark .active-nav {
+      color: #a0c9ff !important;
+      border-bottom: 2px solid #a0c9ff;
+    }
+  </style>
+</head>
+<body class="bg-background dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface font-body-md transition-colors duration-300">
+<!-- TopNavBar Navigation Shell -->
+<header class="fixed w-full top-0 z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm transition-colors duration-300">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-4">
+<div class="font-display-lg text-display-lg-mobile md:text-headline-md font-bold text-primary dark:text-inverse-primary">
+        Kemuel Baduon
+      </div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="active-nav transition-colors" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#projects">Projects</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#skills">Tools</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#contact">Contact</a>
+<!-- Dark Mode Toggle -->
+<button class="p-2 rounded-full hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 transition-colors" id="theme-toggle" title="Toggle dark mode">
+<span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
+</button>
+<a class="bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed px-6 py-2 rounded-full font-semibold hover:opacity-80 transition-all active:scale-95" href="#">Resume</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<div class="flex items-center gap-4 md:hidden">
+<button class="p-2 rounded-full hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 transition-colors" id="theme-toggle-mobile">
+<span class="material-symbols-outlined" id="theme-toggle-icon-mobile">dark_mode</span>
+</button>
+<button class="text-primary dark:text-inverse-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="mt-20">
+<!-- About Section (Hero) -->
+<section class="px-gutter py-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto flex flex-col items-center text-center" id="about">
+<div class="relative mb-8">
+<div class="w-40 h-40 md:w-60 md:h-60 rounded-full border-4 border-white dark:border-outline shadow-xl overflow-hidden bg-surface-container dark:bg-surface-container-highest transition-colors">
+<img class="w-full h-full object-cover" data-alt="A stylized 3D avatar of a friendly character inspired by the SpongeBob SquarePants aesthetic, featuring bright yellow tones, porous texture, and large cheerful eyes. The character is set against a vibrant, underwater-themed background with soft teal water and glowing bubbles. The lighting is sunny and cinematic, emphasizing a modern light-mode portfolio vibe with clean, professional composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWO89LbtBaGjs1YRHEH2K8rqHZ5-aq7V0bRd3lg7BawCJDacajAuU2X27XPFxYIl0tmYYmIvzm1mgZ4ZuyJt9-EUU_TwHPa95DYmmq1lqENADV7Sf-7FLfWyzFPIbbzc54dAGHj9qGaBANcaoj86nLPz-uAZLmFEDuoXnUNmkiQAKzcuM8GbRIaZecmUwr200eOGQdHvSWIk8VNl32L08CJ9_fBTx8cE6ABXPVVGp_R-2p1fDCDXY_5b6usFTXl7KL905F2MPbPA">
+</div>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-inverse-primary mb-6">
+        Kemuel Baduon
+      </h1>
+<p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant dark:text-outline-variant mb-10 transition-colors">
+        I am a passionate aspiring developer dedicated to crafting functional and visually appealing digital experiences. Currently, I am expanding my technical foundation by learning modern web technologies and software engineering principles.
+      </p>
+<a class="inline-flex items-center gap-2 bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-all active:scale-95 shadow-lg" href="https://github.com/Hackertyper1-cyber" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span>
+        GitHub Profile
+      </a>
+</section>
+<!-- Projects Section -->
+<section class="bg-surface-container-low dark:bg-surface-dim/20 py-section-padding-mobile md:py-section-padding-desktop px-gutter transition-colors duration-300" id="projects">
+<div class="max-w-container-max mx-auto">
+<div class="mb-12">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary dark:text-inverse-primary">Selected Projects</h2>
+<div class="w-20 h-1 bg-primary dark:bg-inverse-primary mt-2 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
+<div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
+<img class="w-full h-full object-cover" data-alt="A clean UI screenshot of a web application called Random Food Picker, featuring colorful dish icons and a prominent action button. The interface is modern and minimalist with soft rounded corners and a vibrant color palette of oranges and greens. The scene is presented in high-fidelity with a professional light-mode aesthetic, emphasizing user-friendly design and clean typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFLZgiHyar5eritdqewEqXpS8BUO_6neIrWtc4AnnbktpOlWcUw5kYEhoPFbKevFGAe2hADTkclnKJccW3f7Cmy3Bx08FW6yqV8_l0cuHEBG9MSHzLIozxL_0JgghPTvKtrKOyobneFh9RkP5koSESy4YdRyZtyYHxoz1pLyJS2_l196JgNcIwbgPkSmADrSOLJAqbB_aDvSG-qTzhLL2mqu8TwZakjL31KaPGn2A0A_0Hgve7ILe41H7V1UScxrDggRy_xRShGQ">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">Random Food Picker</h3>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow">A handy tool for the indecisive, helping users pick their next meal randomly from a curated list.</p>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-2 bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" href="https://whatshouldieat1.netlify.app" target="_blank">Live Demo</a>
+<a class="flex-1 text-center py-2 border border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary rounded-lg text-sm font-semibold hover:bg-primary/5 dark:hover:bg-inverse-primary/10 transition-colors" href="https://github.com/Hackertyper1-cyber/WhatShouldIEati.git" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
+<div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
+<img class="w-full h-full object-cover" data-alt="A professional 'About Me' web page layout with elegant typography and whitespace. The design features a two-column grid with text on one side and a stylized graphic on the other. The aesthetic is corporate yet modern, using a sophisticated blue and gray color palette. High-resolution rendering with subtle shadows and a clean, light-mode background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUK7lQaKj4WuA-o6MJxXux7HuMsHOzuAk71I0S_1R-wgCMKG3OcYjkbNO8y3aA2wMYaCJj8K8-KMTAQv7hwWaaaELlRgYdjfps4dGj5LIXhhn7d43VYEgwXPsicfpMXbJrsf1uZvY2a7OtSTNbHY0owyTp4FxMN6Iwq6L9uYbdJnhJnnnPmcIGYfDLhrjJ_8pHFuw2nC06JVSOBtnwJjURRgpjETBJKqlXiO50tatHnWwKZzLzf34LkSZiA1T75tb8x0PIKi0kWw">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">About Me Page</h3>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow">A personal landing page designed to showcase professional background and personal interests with style.</p>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-2 bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" href="https://aboutme1304.netlify.app" target="_blank">Live Demo</a>
+<a class="flex-1 text-center py-2 border border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary rounded-lg text-sm font-semibold hover:bg-primary/5 dark:hover:bg-inverse-primary/10 transition-colors" href="https://github.com/Hackertyper1-cyber/AboutMe.git" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
+<div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
+<img class="w-full h-full object-cover" data-alt="A cybersecurity-themed web application interface showing a password strength meter. The UI displays dynamic strength indicators from weak to strong with a clean numeric readout and color-coded bars. The aesthetic is crisp and secure, utilizing deep blues and safety greens in a minimalist light-mode environment. Professional software interface with sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCghslUxGQvXGV3Nm6C-EfjkhLlbzPzkTyg_ZCCZQDQh43sG2bAKkvOzi9H4jBz8jz28PvPOH-R3vGChVwRu65jSlW6AAIGnz3BpDEY0nB77ZlHGdMajkrmRd2kSwGWQBe0HEpX51eQeaSQsxCJQwOCW09bk8svAYQzfPTslLebUuTOLWubh823-8GNkv8Ve_1XVfHFOrveCygdpOUfDsqrrcPJ47tA4ElQ8Y9zcesYzONKuTE2L45PIWTnVHhK7g_vxCGIA10T5g">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">Password Strength</h3>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow">A security-focused utility that evaluates the robustness of user passwords in real-time.</p>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-2 bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" href="https://passkey1304.netlify.app" target="_blank">Live Demo</a>
+<a class="flex-1 text-center py-2 border border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary rounded-lg text-sm font-semibold hover:bg-primary/5 dark:hover:bg-inverse-primary/10 transition-colors" href="https://github.com/Hackertyper1-cyber/Passkey.git" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
+<div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
+<img class="w-full h-full object-cover" data-alt="A modern countdown timer application interface with large, bold digital numerals against a clean white background. The design features soft drop shadows and rounded primary buttons for starting and stopping. The visual style is highly legible and functional, adhering to a minimalist corporate aesthetic with deep navy blue accents and plenty of breathable whitespace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs9-LuvQuQ17y332fRKGNao_7VZoH0xhhQd9gbtxBLXZwizYfb4RSuFaSfXS-zJUHuh064qqRQ1jDGhx-btR2G3XM3sNlGvkFBAeAHX51dV5XNdYCMHWs8SqZu8RSPRFhVrwg3-1qgknQMClCOKZ0DVpAr72p4Zyd6MoUqo9CsKaE2CFG7fBz3r_d_58GUpPc7H7DmJxcToy617_WmaIcpdii_qU9p-7ouh3PlNln6-R82n5S7kK7l-ByN6cuVZU-RcgTffGzZqg">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">Countdown App</h3>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow">A sleek productivity app for tracking time remaining for specific tasks or upcoming events.</p>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-2 bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" href="https://count-down1304.vercel.app" target="_blank">Live Demo</a>
+<a class="flex-1 text-center py-2 border border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary rounded-lg text-sm font-semibold hover:bg-primary/5 dark:hover:bg-inverse-primary/10 transition-colors" href="https://github.com/Hackertyper1-cyber/CountDown.git" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+<!-- Project 5 (Coming Soon) -->
+<div class="project-card bg-surface-container-lowest/50 dark:bg-surface-container/30 rounded-xl overflow-hidden border border-dashed border-outline-variant dark:border-outline flex flex-col opacity-80">
+<div class="h-48 w-full bg-surface-container-high dark:bg-on-surface-variant/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline dark:text-outline-variant text-6xl">inventory_2</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-outline dark:text-outline-variant mb-2">Project 5</h3>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow italic">New innovative project currently in development. Stay tuned for updates!</p>
+<div class="flex gap-4">
+<button class="flex-1 text-center py-2 bg-outline-variant dark:bg-outline/50 text-on-surface-variant dark:text-outline-variant rounded-lg text-sm font-semibold cursor-not-allowed" disabled="">Coming Soon</button>
+<button class="flex-1 text-center py-2 border border-outline-variant dark:border-outline text-outline-variant dark:text-outline rounded-lg text-sm font-semibold cursor-not-allowed" disabled="">Locked</button>
+</div>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
+<div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
+<img class="w-full h-full object-cover" data-alt="A vibrant entertainment app UI called ShowSwipe, featuring a deck of cards representing movie posters that users can swipe through. The design is energetic and modern, with high-contrast elements and smooth motion-blur effects suggesting interactivity. The color palette is dark-blue dominant with bright pops of accent color, all presented in a premium mobile interface style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYxv-o8YT1eyUnbseRkUyipPReF5rhtqDMD8bEv0vgaAMTJPHjFyUSaruQYNN1xt_R8CIs2M0fgSLjZdvbC29B2iv2LNKcNZrPT3SmXNNS8n_M9wSKwzckeRHjTiBrEca90CW9ro5_YeRNDDpomVH2kcF1KX2AFtr25Qm4trwwbJ44LRlbmZvVBWLZljPPV02X4fga_7kuz8PSitWCtcSnI4HIwmXGhrsWiRj359IspnnQPWzde8yn2SutS6PldImjsA7yFEIGnA">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">ShowSwipe</h3>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow">An interactive entertainment discovery app where users swipe to find movies and shows they love.</p>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-2 bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" href="https://show-swipe1111.vercel.app" target="_blank">Live Demo</a>
+<a class="flex-1 text-center py-2 border border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary rounded-lg text-sm font-semibold hover:bg-primary/5 dark:hover:bg-inverse-primary/10 transition-colors" href="https://github.com/Hackertyper1-cyber/ShowSwipe.git" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tools & Skills Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter max-w-container-max mx-auto" id="skills">
+<div class="mb-12 text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary dark:text-inverse-primary">Tools &amp; Skills</h2>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mt-2 transition-colors">The tech stack I use to bring ideas to life.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+<!-- Skill items -->
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">html</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">HTML</span>
+</div>
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">css</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">CSS</span>
+</div>
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">javascript</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">JavaScript</span>
+</div>
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">code</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">VS Code</span>
+</div>
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">GitHub</span>
+</div>
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">cloud_done</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">Vercel</span>
+</div>
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">switch</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">Google Stitch</span>
+</div>
+<div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">pentagon</span>
+</div>
+<span class="font-semibold text-on-surface dark:text-inverse-on-surface">Figma</span>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container transition-colors duration-300" id="contact">
+<div class="max-w-container-max mx-auto flex flex-col items-center text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Let's Connect</h2>
+<p class="font-body-lg text-body-lg max-w-xl mb-10 opacity-90">
+          Open for collaborations or just a friendly chat about technology and design.
+        </p>
+<div class="flex flex-col md:flex-row gap-6 w-full max-w-2xl">
+<a class="flex-1 bg-on-primary dark:bg-primary-fixed text-primary dark:text-on-primary-fixed py-4 px-8 rounded-xl font-bold flex items-center justify-center gap-3 hover:scale-105 transition-transform" href="mailto:kemuel@sevenkidscodefoundation.org">
+<span class="material-symbols-outlined">mail</span>
+            kemuel@sevenkidscodefoundation.org
+          </a>
+<div class="flex-1 bg-primary-container dark:bg-inverse-surface border border-on-primary/20 dark:border-inverse-primary/20 text-on-primary dark:text-inverse-primary py-4 px-8 rounded-xl font-bold flex items-center justify-center gap-3 cursor-wait">
+<span class="material-symbols-outlined">link</span>
+            Portfolio (Coming Soon)
+          </div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-stack-lg bg-surface-container-low dark:bg-surface-dim/20 border-t border-outline-variant dark:border-outline/10 font-body-md text-body-md transition-colors duration-300">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter gap-stack-md">
+<div class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant">
+        Built by Kemuel Baduon, 2026
+      </div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="https://github.com/Hackertyper1-cyber">GitHub</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Twitter</a>
+</div>
+<div class="text-on-surface-variant dark:text-outline-variant text-sm opacity-60">
+        © 2024 Kemuel Baduon. Built with precision and discipline.
+      </div>
+</div>
+</footer>
+<script>
+    // Theme toggle logic
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleBtnMobile = document.getElementById('theme-toggle-mobile');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    const themeToggleIconMobile = document.getElementById('theme-toggle-icon-mobile');
+    const htmlElement = document.documentElement;
+
+    function updateIcons(isDark) {
+      const icon = isDark ? 'light_mode' : 'dark_mode';
+      themeToggleIcon.innerText = icon;
+      themeToggleIconMobile.innerText = icon;
+    }
+
+    function toggleTheme() {
+      const isDark = htmlElement.classList.contains('dark');
+      if (isDark) {
+        htmlElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        updateIcons(false);
+      } else {
+        htmlElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        updateIcons(true);
+      }
+    }
+
+    // Initialize theme from localStorage
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlElement.classList.add('dark');
+      updateIcons(true);
+    } else {
+      htmlElement.classList.remove('dark');
+      updateIcons(false);
+    }
+
+    themeToggleBtn.addEventListener('click', toggleTheme);
+    themeToggleBtnMobile.addEventListener('click', toggleTheme);
+
+    // Navigation highlight logic
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('header nav div.hidden a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        if (!link.classList.contains('bg-primary')) {
+          link.classList.remove('active-nav');
+          link.classList.add('text-on-surface-variant', 'dark:text-outline-variant');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active-nav');
+            link.classList.remove('text-on-surface-variant', 'dark:text-outline-variant');
+          }
+        }
+      });
+    });
+
+    // Mobile menu mock toggle
+    const menuBtn = document.querySelector('header nav div.md\\:hidden button.text-primary');
+    menuBtn.addEventListener('click', () => {
+      alert('Mobile menu placeholder - Navigation links are visible on scroll!');
+    });
+  </script>
+
+
+</body>
+</html>
