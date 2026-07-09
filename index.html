@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Kemuel Baduon | Portfolio</title>
@@ -130,36 +130,32 @@
 <body class="bg-background dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface font-body-md transition-colors duration-300">
 <!-- TopNavBar Navigation Shell -->
 <header class="fixed w-full top-0 z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm transition-colors duration-300">
-<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-4"><div class="flex-1 flex justify-start">
-  <div class="font-display-lg text-display-lg-mobile md:text-headline-md font-bold text-primary dark:text-inverse-primary">
-    Kemuel Baduon
-  </div>
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-4">
+<div class="font-display-lg text-display-lg-mobile md:text-headline-md font-bold text-primary dark:text-inverse-primary">
+        Kemuel Baduon
+      </div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="active-nav transition-colors" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#projects">Projects</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#skills">Tools</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#contact">Contact</a>
+<!-- Dark Mode Toggle -->
+<button class="p-2 rounded-full hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 transition-colors" id="theme-toggle" title="Toggle dark mode">
+<span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
+</button>
+<a class="bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed px-6 py-2 rounded-full font-semibold hover:opacity-80 transition-all active:scale-95" href="#">Resume</a>
 </div>
-
-<div class="hidden md:flex items-center justify-center gap-8 font-body-md text-body-md">
-  <a class="active-nav transition-colors" href="#about">About</a>
-  <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#projects">Projects</a>
-  <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#skills">Tools</a>
-  <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#contact">Contact</a>
+<!-- Mobile Menu Toggle -->
+<div class="flex items-center gap-4 md:hidden">
+<button class="p-2 rounded-full hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 transition-colors" id="theme-toggle-mobile">
+<span class="material-symbols-outlined" id="theme-toggle-icon-mobile">dark_mode</span>
+</button>
+<button class="text-primary dark:text-inverse-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
-
-<div class="flex-1 flex justify-end items-center gap-8">
-  <div class="hidden md:flex items-center gap-8">
-    <button class="p-2 rounded-full hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 transition-colors" id="theme-toggle" title="Toggle dark mode">
-      <span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
-    </button>
-    <div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30 dark:border-outline/20 shadow-sm"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGBO8nZnE4cIUrRcueEezK3JTNoGmVgvLUyBl4wbqkW3tE1fv3yey68Kb89snGEj4hFS27WougI8p5bITu2uvpK3zy3AO6aYBxcPTHSCVsp3hFbPUwpjMgazQB3Uj9J_md3YJEG7M8t3CmdcbXfVwSTvJEKMV0HbpUcretKqdIjbfyTcgmpH7X5bvyuykj6jpeOUbCAzcI_IiKU-3pp3whGCuDjOxvt4gKvSCja1Srz96iIDCXybBkXZ46hUQcoBcLwcElUkcY9A" alt="Profile" class="w-full h-full object-cover"></div>
-  </div>
-  
-  <div class="flex items-center gap-4 md:hidden">
-    <button class="p-2 rounded-full hover:bg-surface-container-highest dark:hover:bg-on-surface-variant/20 transition-colors" id="theme-toggle-mobile">
-      <span class="material-symbols-outlined" id="theme-toggle-icon-mobile">dark_mode</span>
-    </button>
-    <button class="text-primary dark:text-inverse-primary p-2">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
-  </div>
-</div></nav>
+</nav>
 </header>
 <main class="mt-20">
 <!-- About Section (Hero) -->
@@ -191,7 +187,7 @@
 <!-- Project 1 -->
 <div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
 <div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
-<img class="w-full h-full object-cover" data-alt="A clean UI screenshot of a web application called Random Food Picker, featuring colorful dish icons and a prominent action button. The interface is modern and minimalist with soft rounded corners and a vibrant color palette of oranges and greens. The scene is presented in high-fidelity with a professional light-mode aesthetic, emphasizing user-friendly design and clean typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2TRdZNkKgfGYsZmMfjaHNkUubVb1c5TUVCWwZkK-suDgLggU2lkX9513KVA2DRNoW24Y3PgLpcIjzsnvvZ6ci0s-ssp6ukhG5_0MabmOGB7lTGXj3U0pNBamQ-DmVOnW-lditoU9neKnvuxiBuqUu2oXFjKewt5ji9lQoLdSHAC_sGj7FzHVVM9U0seQ25PJceokPBLlq-vP63sTHGITDlok5G99ciodUqFKcWKRkS5pk1FB-nxicpMZKHb4mOEPZeDiXuwQ0bw">
+<img class="w-full h-full object-cover" data-alt="A clean UI screenshot of a web application called Random Food Picker, featuring colorful dish icons and a prominent action button. The interface is modern and minimalist with soft rounded corners and a vibrant color palette of oranges and greens. The scene is presented in high-fidelity with a professional light-mode aesthetic, emphasizing user-friendly design and clean typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFLZgiHyar5eritdqewEqXpS8BUO_6neIrWtc4AnnbktpOlWcUw5kYEhoPFbKevFGAe2hADTkclnKJccW3f7Cmy3Bx08FW6yqV8_l0cuHEBG9MSHzLIozxL_0JgghPTvKtrKOyobneFh9RkP5koSESy4YdRyZtyYHxoz1pLyJS2_l196JgNcIwbgPkSmADrSOLJAqbB_aDvSG-qTzhLL2mqu8TwZakjL31KaPGn2A0A_0Hgve7ILe41H7V1UScxrDggRy_xRShGQ">
 </div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">Random Food Picker</h3>
@@ -205,7 +201,7 @@
 <!-- Project 2 -->
 <div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
 <div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
-<img class="w-full h-full object-cover" data-alt="A professional 'About Me' web page layout with elegant typography and whitespace. The design features a two-column grid with text on one side and a stylized graphic on the other. The aesthetic is corporate yet modern, using a sophisticated blue and gray color palette. High-resolution rendering with subtle shadows and a clean, light-mode background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBryEFOjTjog7asC-7PXoNLKaM-MVROxjIBfiZeuxAft-rXszlyj6hNlUZbwWri2tR27Mfu8Z5PTDUdLiAktYq3lqNNlZpbmRXI86D6rWxqC_GCKkhNEW4K3f-A0d_KCjLA7VZbq16t8u2Dber6H36t2LyWup0RngJ6254usske0flsOEGgp_cSw_VkE4h3S4S2hrt6m0uPdiE9X7i3KIyy4h0IzixTSNN6xcBjvWb7xivk2QAa2r5nCzI-7G2cCFes0ACksOt-Ow">
+<img class="w-full h-full object-cover" data-alt="A professional 'About Me' web page layout with elegant typography and whitespace. The design features a two-column grid with text on one side and a stylized graphic on the other. The aesthetic is corporate yet modern, using a sophisticated blue and gray color palette. High-resolution rendering with subtle shadows and a clean, light-mode background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUK7lQaKj4WuA-o6MJxXux7HuMsHOzuAk71I0S_1R-wgCMKG3OcYjkbNO8y3aA2wMYaCJj8K8-KMTAQv7hwWaaaELlRgYdjfps4dGj5LIXhhn7d43VYEgwXPsicfpMXbJrsf1uZvY2a7OtSTNbHY0owyTp4FxMN6Iwq6L9uYbdJnhJnnnPmcIGYfDLhrjJ_8pHFuw2nC06JVSOBtnwJjURRgpjETBJKqlXiO50tatHnWwKZzLzf34LkSZiA1T75tb8x0PIKi0kWw">
 </div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">About Me Page</h3>
@@ -219,7 +215,7 @@
 <!-- Project 3 -->
 <div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
 <div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
-<img class="w-full h-full object-cover" data-alt="A cybersecurity-themed web application interface showing a password strength meter. The UI displays dynamic strength indicators from weak to strong with a clean numeric readout and color-coded bars. The aesthetic is crisp and secure, utilizing deep blues and safety greens in a minimalist light-mode environment. Professional software interface with sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpFGVWIcPcKuBAvXIMWC3JU-gCK4-bJ1qOhK3MYt0E_uDDUYW4TMd9YPdit-gJhCptSA7XRxm4IjYYHU7CBMP-Wo7V7ECgBtka-rxuseNAn4T0WF71NkaNhqVkMFKlWGPsq2kzrAbJEzMtYi6gxgUpqQUZW-Vf0_QeC56ctDPVfvtDPnQnYJT1phPfRXu19qhPuQgcs4b6kNhOK5lapvClDDCGBBb7FQoPCVOyG4_gf6KLgnJm1OqAPdylzyI3TNffn5SEOkz7fg">
+<img class="w-full h-full object-cover" data-alt="A cybersecurity-themed web application interface showing a password strength meter. The UI displays dynamic strength indicators from weak to strong with a clean numeric readout and color-coded bars. The aesthetic is crisp and secure, utilizing deep blues and safety greens in a minimalist light-mode environment. Professional software interface with sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCghslUxGQvXGV3Nm6C-EfjkhLlbzPzkTyg_ZCCZQDQh43sG2bAKkvOzi9H4jBz8jz28PvPOH-R3vGChVwRu65jSlW6AAIGnz3BpDEY0nB77ZlHGdMajkrmRd2kSwGWQBe0HEpX51eQeaSQsxCJQwOCW09bk8svAYQzfPTslLebUuTOLWubh823-8GNkv8Ve_1XVfHFOrveCygdpOUfDsqrrcPJ47tA4ElQ8Y9zcesYzONKuTE2L45PIWTnVHhK7g_vxCGIA10T5g">
 </div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">Password Strength</h3>
@@ -233,7 +229,7 @@
 <!-- Project 4 -->
 <div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
 <div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
-<img class="w-full h-full object-cover" data-alt="A modern countdown timer application interface with large, bold digital numerals against a clean white background. The design features soft drop shadows and rounded primary buttons for starting and stopping. The visual style is highly legible and functional, adhering to a minimalist corporate aesthetic with deep navy blue accents and plenty of breathable whitespace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAz2zD3MWhC4vZiC_HIArscNMvwdeQYyIEvkAQYiIXbxSBdZK4QZzHKfjgcWrsPXhcKM3OFVn5rQyZmXaM5TV4mCUy47NdKemxZvcXIepHWEuJNaXyWuhfoFUpskmxX7ubWusu8euSCtylU9RwwI8NzCzZFcFCITvBIr5v74nQcejk_xCgRhx5peMb8Of2SKsY0eKbSIx2-yWKLUmNd5siHTNM3_EA1FV64mTfSfH3EVrktG_RqGtxLhYPOunaGCrfln_khLzSZA">
+<img class="w-full h-full object-cover" data-alt="A modern countdown timer application interface with large, bold digital numerals against a clean white background. The design features soft drop shadows and rounded primary buttons for starting and stopping. The visual style is highly legible and functional, adhering to a minimalist corporate aesthetic with deep navy blue accents and plenty of breathable whitespace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs9-LuvQuQ17y332fRKGNao_7VZoH0xhhQd9gbtxBLXZwizYfb4RSuFaSfXS-zJUHuh064qqRQ1jDGhx-btR2G3XM3sNlGvkFBAeAHX51dV5XNdYCMHWs8SqZu8RSPRFhVrwg3-1qgknQMClCOKZ0DVpAr72p4Zyd6MoUqo9CsKaE2CFG7fBz3r_d_58GUpPc7H7DmJxcToy617_WmaIcpdii_qU9p-7ouh3PlNln6-R82n5S7kK7l-ByN6cuVZU-RcgTffGzZqg">
 </div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">Countdown App</h3>
@@ -245,23 +241,23 @@
 </div>
 </div>
 <!-- Project 5 (Coming Soon) -->
-<div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
-<div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
-<img alt="HeatGuide Project Screenshot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIO38aoLNo1TlUMEowBs1-AL9QrycNpKqb38Yd_4SfYPnSbbAKkXhtN2DOa2TPKgyxhPBTUm8hKyw7avxCfgIGVo9bEktKncyo7_PaYTfiGLeJ6HXBNvsI6SavwDuwiIBhKLP51pkygMWZSXor1h1KpF-960wD6nyPIGK3IQdy3wrB15h8aPtplaO5_16Z9sqQSLvh5BxhexVdPjnqgBbT9hQB5l24DRXfIwt6xgcmhFX_9YTMcin0eVrQK5Hw2XqPP7MwwRGCWA">
+<div class="project-card bg-surface-container-lowest/50 dark:bg-surface-container/30 rounded-xl overflow-hidden border border-dashed border-outline-variant dark:border-outline flex flex-col opacity-80">
+<div class="h-48 w-full bg-surface-container-high dark:bg-on-surface-variant/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-outline dark:text-outline-variant text-6xl">inventory_2</span>
 </div>
 <div class="p-6 flex flex-col flex-grow">
-<h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">HeatGuide</h3>
-<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow">The ultimate companion for reheating leftovers and cooking essentials perfectly with precision.</p>
+<h3 class="font-headline-md text-headline-md text-outline dark:text-outline-variant mb-2">Project 5</h3>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-md mb-6 flex-grow italic">New innovative project currently in development. Stay tuned for updates!</p>
 <div class="flex gap-4">
-<a class="flex-1 text-center py-2 bg-primary dark:bg-primary-fixed text-on-primary dark:text-on-primary-fixed rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" href="#" target="_blank">Live Demo</a>
-<a class="flex-1 text-center py-2 border border-primary dark:border-inverse-primary text-primary dark:text-inverse-primary rounded-lg text-sm font-semibold hover:bg-primary/5 dark:hover:bg-inverse-primary/10 transition-colors" href="#" target="_blank">GitHub</a>
+<button class="flex-1 text-center py-2 bg-outline-variant dark:bg-outline/50 text-on-surface-variant dark:text-outline-variant rounded-lg text-sm font-semibold cursor-not-allowed" disabled="">Coming Soon</button>
+<button class="flex-1 text-center py-2 border border-outline-variant dark:border-outline text-outline-variant dark:text-outline rounded-lg text-sm font-semibold cursor-not-allowed" disabled="">Locked</button>
 </div>
 </div>
 </div>
 <!-- Project 6 -->
 <div class="project-card bg-surface-container-lowest dark:bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 dark:border-outline/20 flex flex-col transition-colors">
 <div class="h-48 w-full bg-surface-variant dark:bg-on-surface-variant/20">
-<img class="w-full h-full object-cover" data-alt="A vibrant entertainment app UI called ShowSwipe, featuring a deck of cards representing movie posters that users can swipe through. The design is energetic and modern, with high-contrast elements and smooth motion-blur effects suggesting interactivity. The color palette is dark-blue dominant with bright pops of accent color, all presented in a premium mobile interface style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRQSXrAd8ENCE2bc358Rna5xqgRmHwd7YHvUvwmS37tRB3sKQjSDbyuiWIJk0vFQ0RlUrhXH5EzIriPxIBdROV328w-Ub7tTbwnlQEKwItB-VP2_WToMyub030umETd312IfM3H9G9NJi9x2lkU83k13-9jz9fY3SzMdLi7I2glB54r7NwGIrTWCuvgFVGQnDPvzJOAJbuuCxUW4JFXCRpCV4bodkrBbDE5-J0vSWd_C0rix8eC3UAinQHWf8BKbJdrNa-wxmBUA">
+<img class="w-full h-full object-cover" data-alt="A vibrant entertainment app UI called ShowSwipe, featuring a deck of cards representing movie posters that users can swipe through. The design is energetic and modern, with high-contrast elements and smooth motion-blur effects suggesting interactivity. The color palette is dark-blue dominant with bright pops of accent color, all presented in a premium mobile interface style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYxv-o8YT1eyUnbseRkUyipPReF5rhtqDMD8bEv0vgaAMTJPHjFyUSaruQYNN1xt_R8CIs2M0fgSLjZdvbC29B2iv2LNKcNZrPT3SmXNNS8n_M9wSKwzckeRHjTiBrEca90CW9ro5_YeRNDDpomVH2kcF1KX2AFtr25Qm4trwwbJ44LRlbmZvVBWLZljPPV02X4fga_7kuz8PSitWCtcSnI4HIwmXGhrsWiRj359IspnnQPWzde8yn2SutS6PldImjsA7yFEIGnA">
 </div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-2">ShowSwipe</h3>
@@ -284,35 +280,51 @@
 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
 <!-- Skill items -->
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2TRdZNkKgfGYsZmMfjaHNkUubVb1c5TUVCWwZkK-suDgLggU2lkX9513KVA2DRNoW24Y3PgLpcIjzsnvvZ6ci0s-ssp6ukhG5_0MabmOGB7lTGXj3U0pNBamQ-DmVOnW-lditoU9neKnvuxiBuqUu2oXFjKewt5ji9lQoLdSHAC_sGj7FzHVVM9U0seQ25PJceokPBLlq-vP63sTHGITDlok5G99ciodUqFKcWKRkS5pk1FB-nxicpMZKHb4mOEPZeDiXuwQ0bw" alt="HTML" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">html</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">HTML</span>
 </div>
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBryEFOjTjog7asC-7PXoNLKaM-MVROxjIBfiZeuxAft-rXszlyj6hNlUZbwWri2tR27Mfu8Z5PTDUdLiAktYq3lqNNlZpbmRXI86D6rWxqC_GCKkhNEW4K3f-A0d_KCjLA7VZbq16t8u2Dber6H36t2LyWup0RngJ6254usske0flsOEGgp_cSw_VkE4h3S4S2hrt6m0uPdiE9X7i3KIyy4h0IzixTSNN6xcBjvWb7xivk2QAa2r5nCzI-7G2cCFes0ACksOt-Ow" alt="CSS" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">css</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">CSS</span>
 </div>
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpFGVWIcPcKuBAvXIMWC3JU-gCK4-bJ1qOhK3MYt0E_uDDUYW4TMd9YPdit-gJhCptSA7XRxm4IjYYHU7CBMP-Wo7V7ECgBtka-rxuseNAn4T0WF71NkaNhqVkMFKlWGPsq2kzrAbJEzMtYi6gxgUpqQUZW-Vf0_QeC56ctDPVfvtDPnQnYJT1phPfRXu19qhPuQgcs4b6kNhOK5lapvClDDCGBBb7FQoPCVOyG4_gf6KLgnJm1OqAPdylzyI3TNffn5SEOkz7fg" alt="JavaScript" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">javascript</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">JavaScript</span>
 </div>
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAz2zD3MWhC4vZiC_HIArscNMvwdeQYyIEvkAQYiIXbxSBdZK4QZzHKfjgcWrsPXhcKM3OFVn5rQyZmXaM5TV4mCUy47NdKemxZvcXIepHWEuJNaXyWuhfoFUpskmxX7ubWusu8euSCtylU9RwwI8NzCzZFcFCITvBIr5v74nQcejk_xCgRhx5peMb8Of2SKsY0eKbSIx2-yWKLUmNd5siHTNM3_EA1FV64mTfSfH3EVrktG_RqGtxLhYPOunaGCrfln_khLzSZA" alt="VS Code" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">code</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">VS Code</span>
 </div>
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIO38aoLNo1TlUMEowBs1-AL9QrycNpKqb38Yd_4SfYPnSbbAKkXhtN2DOa2TPKgyxhPBTUm8hKyw7avxCfgIGVo9bEktKncyo7_PaYTfiGLeJ6HXBNvsI6SavwDuwiIBhKLP51pkygMWZSXor1h1KpF-960wD6nyPIGK3IQdy3wrB15h8aPtplaO5_16Z9sqQSLvh5BxhexVdPjnqgBbT9hQB5l24DRXfIwt6xgcmhFX_9YTMcin0eVrQK5Hw2XqPP7MwwRGCWA" alt="GitHub" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">GitHub</span>
 </div>
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRQSXrAd8ENCE2bc358Rna5xqgRmHwd7YHvUvwmS37tRB3sKQjSDbyuiWIJk0vFQ0RlUrhXH5EzIriPxIBdROV328w-Ub7tTbwnlQEKwItB-VP2_WToMyub030umETd312IfM3H9G9NJi9x2lkU83k13-9jz9fY3SzMdLi7I2glB54r7NwGIrTWCuvgFVGQnDPvzJOAJbuuCxUW4JFXCRpCV4bodkrBbDE5-J0vSWd_C0rix8eC3UAinQHWf8BKbJdrNa-wxmBUA" alt="Vercel" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">cloud_done</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">Vercel</span>
 </div>
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtSQPNjmpIbMFRb7v7TkrX_i3e6JWgB3osVOzWeM8soevoxKVEuS1AbBggEUQXW67iFsPK-xGwWHZRFtF8pE8vzb69xu3EXEirIH8HgeY9b1bhvXnKsRRMRM86TGkwthnNCxePtUeer99RE5-hDe3B1ljgc1zKtPfW8ew2LjypPBCFh3o_OAuPl32qZUpKcPa9Vpk49ech50cn3JlSsxYMtFVrXptuelstNKqrMBGnXRnmkmHRZFKpCCFWR8YQtE2AUIjUO9YoMA" alt="Google" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">switch</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">Google Stitch</span>
 </div>
 <div class="skill-card flex flex-col items-center gap-4 p-6 bg-surface-container-low dark:bg-surface-container-highest/20 rounded-xl transition-all duration-300">
-<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDh6rOXDANT3OXT37aXl8DLzF6P8l37mEWHz2t8ike4PCXRkGqlY3dm6vD3D80qjTNalQ-ItbxYC1Rw-R18-WjSpdt_pHqTM-V6tu5GKby-yCytaBjK_2vd5XUzb5k72j1KTbGzQqQtlSubI5hfEZ8a1imVj6o9CPbSB8kDRVcjlln-SwXq1UoBmoAGJ2iZOICY10Uw-fAlIEoWoidbbkJofNgSfKSfy3kdlD3ggXekO2z3RYZYRxm8fIeeKIXgE9VgyEilkUKbQ" alt="Figma" class="w-10 h-10 object-contain"></div>
+<div class="skill-icon w-16 h-16 rounded-lg bg-surface-container-highest dark:bg-surface-container-lowest/10 flex items-center justify-center transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl">pentagon</span>
+</div>
 <span class="font-semibold text-on-surface dark:text-inverse-on-surface">Figma</span>
 </div>
 </div>
@@ -426,10 +438,5 @@
   </script>
 
 
-
-
-
-
-
-
-</body></html>
+</body>
+</html>
